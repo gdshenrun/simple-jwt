@@ -6,29 +6,29 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/simple-jwt
  * @document https://github.com/qbhy/simple-jwt/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/simple-jwt/blob/master/LICENSE
  */
-namespace Qbhy\SimpleJwt\Laravel;
+namespace Gdshenrun\SimpleJwt\Laravel;
 
 use Illuminate\Database\Eloquent\Model;
-use Qbhy\SimpleJwt\Exceptions\TokenProviderException;
-use Qbhy\SimpleJwt\JWT;
-use Qbhy\SimpleJwt\JWTManager;
+use Gdshenrun\SimpleJwt\Exceptions\TokenProviderException;
+use Gdshenrun\SimpleJwt\JWT;
+use Gdshenrun\SimpleJwt\JWTManager;
 
 /**
  * Trait TokenProviderAble.
  *
- * @mixin \Qbhy\SimpleJwt\Interfaces\TokenProviderInterface
+ * @mixin \Gdshenrun\SimpleJwt\Interfaces\TokenProviderInterface
  * @mixin \Illuminate\Database\Eloquent\Model
  */
 trait TokenProviderAble
 {
     /**
      * @throws TokenProviderException
-     * @throws \Qbhy\SimpleJwt\Exceptions\InvalidTokenException
-     * @throws \Qbhy\SimpleJwt\Exceptions\SignatureException
-     * @throws \Qbhy\SimpleJwt\Exceptions\TokenExpiredException
+     * @throws \Gdshenrun\SimpleJwt\Exceptions\InvalidTokenException
+     * @throws \Gdshenrun\SimpleJwt\Exceptions\SignatureException
+     * @throws \Gdshenrun\SimpleJwt\Exceptions\TokenExpiredException
      * @return Model|TokenProviderAble
      */
     public static function fromToken(string $token)

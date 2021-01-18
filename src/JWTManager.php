@@ -6,23 +6,23 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/simple-jwt
  * @document https://github.com/qbhy/simple-jwt/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/simple-jwt/blob/master/LICENSE
  */
-namespace Qbhy\SimpleJwt;
+namespace Gdshenrun\SimpleJwt;
 
 use Doctrine\Common\Cache\Cache;
 use Doctrine\Common\Cache\FilesystemCache;
-use Qbhy\SimpleJwt\Encoders\Base64UrlSafeEncoder;
-use Qbhy\SimpleJwt\EncryptAdapters\PasswordHashEncrypter;
-use Qbhy\SimpleJwt\Exceptions\InvalidTokenException;
-use Qbhy\SimpleJwt\Exceptions\SignatureException;
-use Qbhy\SimpleJwt\Exceptions\TokenBlacklistException;
-use Qbhy\SimpleJwt\Exceptions\TokenExpiredException;
-use Qbhy\SimpleJwt\Exceptions\TokenNotActiveException;
-use Qbhy\SimpleJwt\Exceptions\TokenRefreshExpiredException;
-use Qbhy\SimpleJwt\Interfaces\Encoder;
-use Qbhy\SimpleJwt\Interfaces\Encrypter;
+use Gdshenrun\SimpleJwt\Encoders\Base64UrlSafeEncoder;
+use Gdshenrun\SimpleJwt\EncryptAdapters\PasswordHashEncrypter;
+use Gdshenrun\SimpleJwt\Exceptions\InvalidTokenException;
+use Gdshenrun\SimpleJwt\Exceptions\SignatureException;
+use Gdshenrun\SimpleJwt\Exceptions\TokenBlacklistException;
+use Gdshenrun\SimpleJwt\Exceptions\TokenExpiredException;
+use Gdshenrun\SimpleJwt\Exceptions\TokenNotActiveException;
+use Gdshenrun\SimpleJwt\Exceptions\TokenRefreshExpiredException;
+use Gdshenrun\SimpleJwt\Interfaces\Encoder;
+use Gdshenrun\SimpleJwt\Interfaces\Encrypter;
 
 class JWTManager
 {

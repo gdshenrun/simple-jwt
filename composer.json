@@ -1,20 +1,20 @@
 {
-    "name": "96qbhy/simple-jwt",
+    "name": "gdshenrun/simple-jwt",
     "description": "简单的 jwt 实现",
     "authors": [
         {
-            "name": "96qbhy",
-            "email": "96qbhy@gmail.com"
+            "name": "appledady",
+            "email": "appledady@qq.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Qbhy\\SimpleJwt\\": "src/"
+            "Gdshenrun\\SimpleJwt\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Qbhy\\SimpleJwt\\Tests\\": "tests/"
+            "Gdshenrun\\SimpleJwt\\Tests\\": "tests/"
         }
     },
     "require": {
@@ -39,11 +39,11 @@
             ]
         },
         "hyperf": {
-            "config": "Qbhy\\SimpleJwt\\Hyperf\\ConfigProvider"
+            "config": "Gdshenrun\\SimpleJwt\\Hyperf\\ConfigProvider"
         },
         "laravel": {
             "providers": [
-                "Qbhy\\SimpleJwt\\Laravel\\ServiceProvider"
+                "Gdshenrun\\SimpleJwt\\Laravel\\ServiceProvider"
             ]
         }
     },

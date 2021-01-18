@@ -6,20 +6,20 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/simple-jwt
  * @document https://github.com/qbhy/simple-jwt/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/simple-jwt/blob/master/LICENSE
  */
-namespace Qbhy\SimpleJwt\Tests\Unit;
+namespace Gdshenrun\SimpleJwt\Tests\Unit;
 
-use Qbhy\SimpleJwt\Encoders\Base64UrlSafeEncoder;
-use Qbhy\SimpleJwt\EncryptAdapters\CryptEncrypter;
-use Qbhy\SimpleJwt\EncryptAdapters\Md5Encrypter;
-use Qbhy\SimpleJwt\EncryptAdapters\PasswordHashEncrypter;
-use Qbhy\SimpleJwt\EncryptAdapters\SHA1Encrypter;
-use Qbhy\SimpleJwt\Exceptions\TokenBlacklistException;
-use Qbhy\SimpleJwt\JWT;
-use Qbhy\SimpleJwt\JWTManager;
-use Qbhy\SimpleJwt\Tests\TestCase;
+use Gdshenrun\SimpleJwt\Encoders\Base64UrlSafeEncoder;
+use Gdshenrun\SimpleJwt\EncryptAdapters\CryptEncrypter;
+use Gdshenrun\SimpleJwt\EncryptAdapters\Md5Encrypter;
+use Gdshenrun\SimpleJwt\EncryptAdapters\PasswordHashEncrypter;
+use Gdshenrun\SimpleJwt\EncryptAdapters\SHA1Encrypter;
+use Gdshenrun\SimpleJwt\Exceptions\TokenBlacklistException;
+use Gdshenrun\SimpleJwt\JWT;
+use Gdshenrun\SimpleJwt\JWTManager;
+use Gdshenrun\SimpleJwt\Tests\TestCase;
 
 /**
  * @internal

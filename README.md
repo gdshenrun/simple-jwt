@@ -3,20 +3,20 @@
 
 ## 如何安装 ？
 ```bash
-composer require 96qbhy/simple-jwt
+composer require gdshenrun/simple-jwt
 ```
 
 ## 如何使用 ？
 ```php
 require 'vendor/autoload.php';
 
-use Qbhy\SimpleJwt\JWTManager;
-use Qbhy\SimpleJwt\JWT;
-use Qbhy\SimpleJwt\Encoders;
-use Qbhy\SimpleJwt\EncryptAdapters;
-use Qbhy\SimpleJwt\Exceptions;
+use Gdshenrun\SimpleJwt\JWTManager;
+use Gdshenrun\SimpleJwt\JWT;
+use Gdshenrun\SimpleJwt\Encoders;
+use Gdshenrun\SimpleJwt\EncryptAdapters;
+use Gdshenrun\SimpleJwt\Exceptions;
 
-$secret = '96qbhy/simple-jwt';
+$secret = 'gdshenrun/simple-jwt';
 
 $headers = ['ver' => 0.1,];
 
@@ -69,4 +69,4 @@ print_r($jwt1);
 $jwt2 = new JWT($jwtManager, $headers, $payload);
 ```
 
-96qbhy@gmail.com  
+appledady@qq.com  

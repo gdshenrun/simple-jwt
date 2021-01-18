@@ -6,11 +6,11 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/simple-jwt
  * @document https://github.com/qbhy/simple-jwt/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/simple-jwt/blob/master/LICENSE
  */
-use Qbhy\SimpleJwt\Encoders;
-use Qbhy\SimpleJwt\EncryptAdapters as Encrypter;
+use Gdshenrun\SimpleJwt\Encoders;
+use Gdshenrun\SimpleJwt\EncryptAdapters as Encrypter;
 
 return [
     /*
@@ -39,7 +39,7 @@ return [
 
     /*
      * 可选配置
-     * 加密类必须实现 Qbhy\SimpleJwt\Interfaces\Encrypter 接口
+     * 加密类必须实现 Gdshenrun\SimpleJwt\Interfaces\Encrypter 接口
      */
     'drivers' => [
         Encrypter\PasswordHashEncrypter::alg() => Encrypter\PasswordHashEncrypter::class,

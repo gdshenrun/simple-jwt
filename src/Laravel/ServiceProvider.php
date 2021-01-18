@@ -6,15 +6,15 @@ declare(strict_types=1);
  *
  * @link     https://github.com/qbhy/simple-jwt
  * @document https://github.com/qbhy/simple-jwt/blob/master/README.md
- * @contact  qbhy0715@qq.com
+ * @contact  appledady@foxmail.com
  * @license  https://github.com/qbhy/simple-jwt/blob/master/LICENSE
  */
-namespace Qbhy\SimpleJwt\Laravel;
+namespace Gdshenrun\SimpleJwt\Laravel;
 
 use Illuminate\Foundation\Application as LaravelApplication;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 use Laravel\Lumen\Application as LumenApplication;
-use Qbhy\SimpleJwt\JWTManager;
+use Gdshenrun\SimpleJwt\JWTManager;
 
 class ServiceProvider extends LaravelServiceProvider
 {
