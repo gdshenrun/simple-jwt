@@ -1,5 +1,6 @@
 {
     "name": "gdshenrun/simple-jwt",
+    "version": "1.0.1",
     "description": "简单的 jwt 实现",
     "authors": [
         {
