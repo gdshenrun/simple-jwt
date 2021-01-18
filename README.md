@@ -21,8 +21,8 @@ $secret = 'gdshenrun/simple-jwt';
 $headers = ['ver' => 0.1,];
 
 $payload = [
-    'user_id' => 'qbhy@gmail.com',
-    'tester'  => 'qbhy',
+    'user_id' => 'gdshenrun@gmail.com',
+    'tester'  => 'gdshenrun',
 ];
 
 // 可以使用自己实现的 encrypter 进行签名和校验，请继承自 AbstractEncrypter 抽象类

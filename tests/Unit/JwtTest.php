@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 /**
- * This file is part of qbhy/simple-jwt.
+ * This file is part of gdshenrun/simple-jwt.
  *
- * @link     https://github.com/qbhy/simple-jwt
- * @document https://github.com/qbhy/simple-jwt/blob/master/README.md
+ * @link     https://github.com/gdshenrun/simple-jwt
+ * @document https://github.com/gdshenrun/simple-jwt/blob/master/README.md
  * @contact  appledady@foxmail.com
- * @license  https://github.com/qbhy/simple-jwt/blob/master/LICENSE
+ * @license  https://github.com/gdshenrun/simple-jwt/blob/master/LICENSE
  */
 namespace Gdshenrun\SimpleJwt\Tests\Unit;
 
@@ -44,7 +44,7 @@ class JwtTest extends TestCase
      */
     public function testMd5JwtManager()
     {
-        $secret = 'qbhy/simple-jwt';
+        $secret = 'gdshenrun/simple-jwt';
         $this->assertTrue($this->check($this->manager(Md5Encrypter::class)));
         $this->assertTrue($this->check($this->manager(Md5Encrypter::class, new Base64UrlSafeEncoder())));
     }
@@ -81,7 +81,7 @@ class JwtTest extends TestCase
      */
     public function testJwtManagerBlacklist()
     {
-        $secret = 'qbhy/simple-jwt';
+        $secret = 'gdshenrun/simple-jwt';
         $jwtManager = new JWTManager(compact('secret'));
 
         $jwt = $jwtManager->make(['test' => 'test']);
